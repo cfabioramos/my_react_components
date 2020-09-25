@@ -4,16 +4,20 @@
   "description": "Componente de video como o zoom",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "cross-env NODE_ENV=test nodemon server.js",
+    "start": "cross-env NODE_ENV=desenv nodemon server.js"
   },
   "author": "Fábio Ramos",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "peer": "^0.5.3",
     "socket.io": "^2.3.0",
     "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
